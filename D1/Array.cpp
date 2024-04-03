@@ -645,7 +645,7 @@ using namespace std;
 //             int j=B.size()-1;
 //             int k=C.size()-1;
 //             set<int> res;
-            
+
 //             while(i>-1)
 //             {
 //                 if(j<0 || k<0)
@@ -660,7 +660,7 @@ using namespace std;
 //                          res.insert(A[i]);
 //                      i--;
 //                      j--;
-//                      k--;  
+//                      k--;
 //                     }
 //                     else if(A[i]<C[k])
 //                     {
@@ -679,7 +679,7 @@ using namespace std;
 //                 {
 //                     i--;
 //                 }
-                
+
 //             }
 //             vector<int> ans;
 //             for(auto it:res)
@@ -690,9 +690,8 @@ using namespace std;
 
 //            for(int i=0;i<ans.size();i++)
 //            {
-//             cout<<ans[i]<<endl; 
+//             cout<<ans[i]<<endl;
 //            }
-
 
 //     // for (int i = 0; i < arr.size(); i++)
 //     // {
@@ -700,4 +699,6 @@ using namespace std;
 //     // }
 //     return 0;
 // }
+
+
 
