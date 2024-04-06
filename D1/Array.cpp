@@ -678,41 +678,41 @@ using namespace std;
 //Q12 Minimum number of jumps to reach end (Jump Game)
 //link: https://www.geeksforgeeks.org/problems/minimum-number-of-jumps-1587115620/1?page=1&category%5B%5D=Greedy&sortBy=submissions
 
-int main()
-{
-    vector<int>arr={1, 3, 5, 8, 9, 2, 6, 7, 6, 8, 9};
-    int cnt=1,i=0;
-    while(i<arr.size())
-    {
-       if(arr[i]==0)
-       {
-        return -1;
-       }   
-       else if(arr[i]==1)
-       {
-        if(arr[i]+i<arr.size())
-        {
-            i=arr[i]+i;
-            cnt++;
-        }
-        else
-           break;
-       }
-       else
-       {
-        int j=arr[i];
-        int maxval=0;
-        int k=i+1;
-        while(k<=(i+j))
-        {
-            maxval=max(arr[k],maxval);
-        }
-        i=i+maxval;
-        cnt++;
-       }
-    }
-    cout<<cnt;
-    return 0;
-}
-
+// int main()
+// {
+//     vector<int>arr={1, 3, 5, 8, 9, 2, 6, 7, 6, 8, 9};
+//     int cnt=0,i=0;
+//     while(i<arr.size())
+//     {
+//        if(arr[i]==0)
+//        {
+//         return -1;
+//        }   
+//        else if(arr[i]==1)
+//        {
+//         if(arr[i]+i<arr.size())
+//         {
+//             i=arr[i]+i;
+//             cnt++;
+//         }
+//         else
+//            break;
+//        }
+//        else
+//        {
+//         int j=arr[i];
+//         int maxval=0;
+//         int k=i+1;
+//         while(k<=(i+j))
+//         {
+//             maxval=max(arr[k],maxval);
+//             k++;
+//         }
+//         i=i+maxval;
+//         cnt+=2;
+//        }
+//     }
+//     cout<<cnt;
+//     return 0;
+// }
 
