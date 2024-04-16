@@ -1,4 +1,5 @@
 #include<iostream>
+#include<bits/stdc++.h>
 using namespace std;
 
 class Node{
@@ -36,9 +37,32 @@ Node* build(Node* root)
     root->right=build(root->right);
    
 }
+
+int height(Node* root)
+{
+  if(root==NULL)
+    return 0;
+  
+  return 1 + max(height(root->left),height(root->right));
+}
+
+int DiameterBt(Node* root)
+{
+  if(root==NULL)
+    return 0;
+   
+   int op1=DiameterBt(root->left);
+   int op2=DiameterBt(root->right);
+   int op3=height(root->left)+height(root->right)+1;
+
+   return max(op3,max(op1,op2));
+
+}
 int main()
 {
     Node* Root=NULL;
     Root= build(Root);
+
+    cout<<"diameter of BT is: "<<DiameterBt(Root);
 
 }

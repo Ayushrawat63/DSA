@@ -1,5 +1,6 @@
 #include<iostream>
 #include<bits/stdc++.h>
+#include<vector>
 using namespace std;
 
 class Node{
@@ -60,5 +61,6 @@ int main()
 
     cout<<"heigth of tree: "<<heightBT(Root)<<endl;
     cout<<"heigth of tree: "<<heightBTcnt(Root,0);
+   
 
 }
